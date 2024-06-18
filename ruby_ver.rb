@@ -10,7 +10,7 @@
 # end
 
 def create_letter_hash(input_word)
-    input_word.chars.group_by(&:itself).map { | letter, array | [ letter, array.length ] }.to_h
+    input_word.downcase.chars.group_by(&:itself).map { | letter, array | [ letter, array.length ] }.to_h
 end
 
 def word_possible?(input, reference)
