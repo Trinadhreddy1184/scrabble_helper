@@ -39,4 +39,39 @@ def get_word_list(input_word)
     matching_words_array
 end
 
-require 'pry'; binding.pry
+def get_user_input
+    gets.chomp.downcase
+end
+
+def continue_or_exit
+    puts "Would you like to check more letters? (Y/n)"
+    
+    input = get_user_input
+
+    if input == "y"
+        main
+    elsif input == "n"
+        puts "Exiting program. Thanks for using Scrabble Helper!"
+    else
+        puts "================================"
+        puts "Error: Invalid selection."
+        puts "================================"
+        continue_or_exit
+    end
+end
+
+def main
+    puts "================================"
+    puts "Enter some letters to receive a list of possible words:"
+    input = get_user_input
+    result = get_word_list(input)
+
+    puts "================================"
+    puts "Possible words using #{input}:"
+    puts result
+    puts "================================"
+    
+    continue_or_exit
+end
+
+main
