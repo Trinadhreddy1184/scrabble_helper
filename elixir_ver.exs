@@ -1,10 +1,11 @@
 defmodule ScrabbleModule do
   def mapify_word(word) do
-    word_downcased = String.downcase(word)
-    word_char_list = String.graphemes(word_downcased)
-    grouped_char_list = Enum.group_by(word_char_list, fn x -> x end)
-    char_tuple_list = Enum.map(grouped_char_list, fn {char, char_list} -> {char, length(char_list)} end)
-    Map.new(char_tuple_list)
+    word
+    |> String.downcase()
+    |> String.graphemes()
+    |> Enum.group_by(fn x -> x end)
+    |> Enum.map(fn {char, char_list} -> {char, length(char_list)} end)
+    |> Map.new()
   end
 
   def word_possible?(input, reference) do
