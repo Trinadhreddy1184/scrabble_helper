@@ -37,17 +37,17 @@ def word_possible?(input, reference)
 end
 
 def check_word(input_word)
-    @dict_array = File.readlines('lib/words_alpha.txt').map(&:strip)
+    dict_array = File.readlines('lib/words_alpha.txt').map(&:strip)
 
-    @matching_words_array = []
+    matching_words_array = []
 
-    @dict_array.map do |dict_word|
+    dict_array.map do |dict_word|
         if word_possible?(input_word, dict_word)
-            @matching_words_array << dict_word
+            matching_words_array << dict_word
         end
     end
 
-    @matching_words_array
+    matching_words_array
 end
 
 require 'pry'; binding.pry
