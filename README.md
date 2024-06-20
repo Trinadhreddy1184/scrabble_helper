@@ -5,7 +5,9 @@ As a (relatively) seasoned OOP programmer, my goal with this project was to prac
   - First, by building a [Ruby](https://github.com/ruby/ruby) implementation (easy peasy);
   - Then, by converting that implementation to [Elixir](https://github.com/elixir-lang/elixir) (not so easy peasy).
 
-This ended up a _fantastic_ introduction to the terrifying-yet-wonderful world of functional programming, and I can't wait to dive into some actual Phoenix applications. (Please wish me luck. _Please_.)
+Despite the simplicity of the functionality, Scrabble Helper ended up a _fantastic_ introduction to the terrifying-yet-wonderful world of functional programming. By trying to replicate my Ruby work in Elixir, I slammed right up against some of functional programming's most opinionated principles. That friction forced me to rethink my entire understanding of programming "best practices"—and dare I say it, I might be a functional programming convert in the making.
+
+If you're interested in functional programming and don't quite know where to start, like me, please hit me up! I'm but a step into this perilous journey, and I would love some companions to ~~suffer~~ learn with along the way.
 
 ## Installation
 **Scrabble Helper** requires a local installation of either [Ruby](https://github.com/ruby/ruby) or [Elixir](https://github.com/elixir-lang/elixir) (or both).
