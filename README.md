@@ -1,13 +1,12 @@
 # What is Scrabble Helper?
-**Scrabble Helper** is a simple shell program that displays a list of possible Scrabble words, given a set of letters.
+**Scrabble Helper** is a simple shell program that accepts a series of letters, then displays a list of Scrabble words possible from those letters. I undertook this project as a first foray into Elixir and functional programming, and boy howdy was it rewarding! (And terrifying, but mostly rewarding.)
 
-As a (relatively) seasoned OOP programmer, my goal with this project was to practice Elixir and functional programming: 
-  - First, by building a [Ruby](https://github.com/ruby/ruby) implementation (easy peasy);
-  - Then, by converting that implementation to [Elixir](https://github.com/elixir-lang/elixir) (not so easy peasy).
+  - First, I built the functionality in [Ruby](https://github.com/ruby/ruby) (easy peasy);
+  - Then, I tried to build the same functionality in [Elixir](https://github.com/elixir-lang/elixir) (not so easy peasy).
 
-Despite the simplicity of the functionality, Scrabble Helper ended up a _fantastic_ introduction to the terrifying-yet-wonderful world of functional programming. By trying to replicate my Ruby work in Elixir, I slammed right up against some of functional programming's most opinionated principles. That friction forced me to rethink my entire understanding of programming "best practices"—and dare I say it, I might be a functional programming convert in the making.
+Despite the simplicity of the functionality, Scrabble Helper was a real doozy—and ended up being a _fantastic_ introduction to the terrifying-yet-wonderful world of functional programming. By trying to replicate my Ruby work in Elixir, I slammed right up against some of functional programming's most opinionated principles. That friction had me entirely rethinking both the problem, and my approach to programming in general—and dare I say it, I might be a functional programming convert in the making.
 
-If you're interested in functional programming and don't quite know where to start, like me, please hit me up! I'm but a step into this perilous journey, and I would love some companions to ~~suffer~~ learn with along the way.
+If you're interested in functional programming and don't quite know where to start, like me, please feel free to hit me up! I'm but a single step into this perilous journey, and I would love some companions to ~~suffer~~ learn with along the way.
 
 ## Installation
 **Scrabble Helper** requires a local installation of either [Ruby](https://github.com/ruby/ruby) or [Elixir](https://github.com/elixir-lang/elixir) (or both).
