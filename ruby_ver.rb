@@ -1,14 +1,3 @@
-# require 'lib/words_alpha.txt'
-
-# def initialize_dictionary_file(file_path)
-#     @dict_array = File.readlines(file_path).map(&:strip)
-# end
-
-# def initialize_word_details(word)
-#     @input_word_chars = word.chars
-#     @word_chars_count = word.chars.count
-# end
-
 def create_letter_hash(input_word)
     input_word.downcase.chars.group_by(&:itself).map { | letter, array | [ letter, array.length ] }.to_h
 end
@@ -36,7 +25,7 @@ def word_possible?(input, reference)
     true
 end
 
-def check_word(input_word)
+def get_word_list(input_word)
     dict_array = File.readlines('lib/words_alpha.txt').map(&:strip)
 
     matching_words_array = []
